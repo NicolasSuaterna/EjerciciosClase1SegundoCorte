@@ -10,8 +10,8 @@ function start(){
 			nlong:30,
 			radius:3,
 			colors: [1.0, 0.0, 0.0, 1.0],
-			textures: 'https://lizgar.github.io/A3D/js/earth.jpg'
-			//textures: 'img/earth.jpg'
+			//textures: 'https://lizgar.github.io/A3D/js/earth.jpg'
+			textures: 'img/earth.jpg'
 			 
 				
 		}
@@ -34,8 +34,8 @@ PhiloGL('glCanvas',
 	
 	textures:{
 		
-		src: ['https://lizgar.github.io/A3D/js/earth.jpg'],
-		//src: ['img/earth.jpg'],
+		//src: ['https://lizgar.github.io/A3D/js/earth.jpg'],
+		src: ['img/earth.jpg'],
 		parameters: [{
 			name: 'TEXTURE_MAG_FILTER',
 			value: 'LINEAR'
@@ -174,25 +174,25 @@ events: {
 			canvas = app.canvas,
 			camera = app.camera;
 
-/*
+
 		lighting = $id('lighting'),
           ambient = {
-            r: 0.5,
-            g: 0.4,
-            b: 0.4
+            r: 1.0,
+            g: 1.0,
+            b: 0.0
           },
           direction = {
-            x: -1.0,
-            y: -1.0,
-            z: -1.0,
+            x: 1.0,
+            y: 1.0,
+            z: 1.0,
           
-            r: 0.0,
+            r: 1.0,
             g: 1.0,
             b: 1.0
           };
-*/
 
 
+/*
 		lighting = $id('lighting'),
           ambient = {
             r: $id('ambientR'),
@@ -209,7 +209,7 @@ events: {
             b: $id('directionalB')
           };
 		  
-		  
+		*/  
 		
 		gl.clearColor(0.0, 0.0, 0.0, 1.0);
 		gl.clearDepth(1.0);
@@ -228,7 +228,7 @@ events: {
 			
 			gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPHT_BUFFER_BIT);
 			
-				/*
+				
 		var lights = scene.config.lights;
         lights.enable = lighting.checked;
         lights.ambient = {
@@ -248,7 +248,7 @@ events: {
             z: +direction.z
           }
         };
-		*/
+		
 				
 		//Setup lighting
 		/*

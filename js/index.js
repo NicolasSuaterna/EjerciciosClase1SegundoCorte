@@ -228,7 +228,7 @@ events: {
 			
 			gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPHT_BUFFER_BIT);
 			
-				
+				/*
 		var lights = scene.config.lights;
         //lights.enable = lighting.checked;
         lights.ambient = {
@@ -248,12 +248,12 @@ events: {
             z: +direction.z
           }
         };
-		
+		*/
 				
 		//Setup lighting
-		/*
+		
         var lights = scene.config.lights;
-        lights.enable = lighting.checked;
+        //lights.enable = lighting.checked;
         lights.ambient = {
           r: 0.0,
           g: 1.0,
@@ -262,8 +262,8 @@ events: {
         lights.directional = {
           color: {
             r: 1.0,
-            g: 1.0,
-            b: 0.0
+            g: 0.0,
+            b: 1.0
           },
           direction: {
             x: 1.0,
@@ -271,7 +271,7 @@ events: {
             z: 1.0
           }
         };
-		*/
+		
 		
 		
 		

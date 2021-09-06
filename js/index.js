@@ -230,7 +230,7 @@ events: {
 			
 				
 		var lights = scene.config.lights;
-        lights.enable = lighting.checked;
+        //lights.enable = lighting.checked;
         lights.ambient = {
           r: +ambient.r,
           g: +ambient.g,
